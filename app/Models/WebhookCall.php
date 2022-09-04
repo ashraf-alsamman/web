@@ -39,22 +39,29 @@ class WebhookCall extends SpatieWebhookCall
         'exception' => 'array',
     ];
 
-    public static function storeWebhook(WebhookConfig $config, Request $request): SpatieWebhookCall
+    // public static function storeWebhook(WebhookConfig $config, Request $request): SpatieWebhookCall
+        public static function storeWebhook(WebhookConfig $config, Request $request): SpatieWebhookCall
+
     {
-        $validated = $request->validate([
-            'row.*.title' => 'required',
-            'row.*.post' => 'required',
+
+        $request->validate([
+            '*.title' => 'required|string',
+            '*.AnmeldungenHeute' => 'required|integer',
+            '*.WebsiteBesucherHeute'    => 'required|integer',
+            '*.users'    => 'present|array',
+            '*.users.*.name' => 'required|string',
+            '*.users.*.surname' => 'required|string',
         ]);
-        
+
+
         $headers = SpatieWebhookCall::headersToStore($config, $request);
-
-
         return SpatieWebhookCall::create([
             'name' => $config->name,
             'url' => $request->fullUrl(),
             'headers' => $headers,
             'payload' => $request->input(),
         ]);
+        
     }
 
     public static function headersToStore(WebhookConfig $config, Request $request): array
