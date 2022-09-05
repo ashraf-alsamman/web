@@ -16,7 +16,7 @@
 You can update the visitors counter by hitting api with published API with the postman and update the JSON object and you will see immediately the update on front end part
 
  <p align="center"><a href="https://laravel.com" target="_blank"><img src="https://i.postimg.cc/V6GzcFWB/Screenshot-5.png" width="400"></a></p>
-
+<a href='https://postimages.org/' target='_blank'><img src='https://i.postimg.cc/V6GzcFWB/Screenshot-5.png' border='0' alt='Screenshot-5'/></a>
 
 ### Equipments
 
