@@ -15,12 +15,18 @@ The task consists of two parts
 You can update the visitors counter by hitting api with published API with the postman and update the JSON object and you will see immediately the update on front end part
 
 
-### Requirements
+### Equipments
 
 - **[Laravel](https://laravel.com/)**
 - **[Docker](https://www.docker.com/)**
 - **[Nodejs](https://nodejs.org/en/)**
+- **[Pusher](https://pusher.com/)**
 
+- **[ReactJs](https://reactjs.org/)**
+- **[Redux](https://redux.js.org/)**
+- **[Redux-toolkit](https://redux-toolkit.js.org/)**
+
+ 
 #Steps
 - install laravel project on docker
 - run container docker
