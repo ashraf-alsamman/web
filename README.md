@@ -15,7 +15,7 @@
 - [postman link]
 You can update the visitors counter by hitting api with published API with the postman and update the JSON object and you will see immediately the update on front end part
 
-<p align="center"> <img src="https://i.postimg.cc/V6GzcFWB/Screenshot-5.png" width="400"></p>
+ <img src="https://i.postimg.cc/V6GzcFWB/Screenshot-5.png" width="400"  align="center"> 
 
 
 ### Equipments
