@@ -1,5 +1,7 @@
 <p align="center"><a href="https://laravel.com" target="_blank"><img src="https://www.webconia.de/wp-content/uploads/2020/03/webconia_logo.svg" width="400"></a></p>
 
+
+
  
 
 ## About The task
@@ -12,6 +14,8 @@
 - You can check a live demo from here [fronend link]
 - [postman link]
 You can update the visitors counter by hitting api with published API with the postman and update the JSON object and you will see immediately the update on front end part
+
+<p align="center"><a href="https://laravel.com" target="_blank"><img src="https://i.postimg.cc/V6GzcFWB/Screenshot-5.png" width="400"></a></p>
 
 
 ### Equipments
