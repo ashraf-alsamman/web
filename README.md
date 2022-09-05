@@ -28,7 +28,7 @@ You can update the visitors counter by hitting api with published API with the p
 - **[Redux](https://redux.js.org/)**
 - **[Redux-toolkit](https://redux-toolkit.js.org/)**
 
- 
+  
 # Steps
 - install laravel project on docker
 - run container docker
