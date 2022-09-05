@@ -4,7 +4,6 @@
 
 ## About The task
 
-The task consists of two parts
 - back-end (PHP Laravel, MySQL, Docker)
 - frontend (react js, redux, Redux Toolkit)
 - WebSocket for real-time update (pusher)
