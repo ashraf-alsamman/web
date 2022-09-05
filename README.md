@@ -14,8 +14,10 @@
 - You can check a live demo from here [fronend link]
 - [postman link]
 You can update the visitors counter by hitting api with published API with the postman and update the JSON object and you will see immediately the update on front end part
- <img src='https://i.postimg.cc/6qGvFTxc/Screenshot-7.png' border='0' alt='Screenshot-7'/> 
-  ### Equipments
+
+ <img src='https://i.postimg.cc/3xjbPxK3/webconia.png' border='0' alt='webconia'/> 
+
+### Equipments
 
 - **[Laravel](https://laravel.com/)**
 - **[Docker](https://www.docker.com/)**
