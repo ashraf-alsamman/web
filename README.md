@@ -19,9 +19,10 @@ You can update the visitors counter by hitting api with published API with the p
 
 - **[Laravel](https://laravel.com/)**
 - **[Docker](https://www.docker.com/)**
+- **[Nodejs](https://nodejs.org/en/)**
 
 #Steps
-install laravel project on docker
+- install laravel project on docker
 - run container docker
 
 - install laravel vendor 
