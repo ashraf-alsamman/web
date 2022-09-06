@@ -4,7 +4,7 @@
 
  
 
-## About The task
+## About The task (Coding Challenge)
 
 - Back-end (PHP Laravel, MySQL, Docker).
 - Frontend (React js, Redux, Redux Toolkit).
@@ -85,7 +85,7 @@ You can update the visitors counter by hitting api with published API with the p
   
 # Steps
 - Install Laravel project on docker:
-    - `docker-compose up -d`
+    - `docker run --rm     -u "$(id -u):$(id -g)"     -v $(pwd):/var/www/html     -w /var/www/html     laravelsail/php81-composer:latest     composer update laravel/sail`
 
 - install laravel vendor 
 `./vendor/bin/sail composer install`
