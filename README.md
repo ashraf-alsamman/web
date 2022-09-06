@@ -15,6 +15,8 @@
 - [postman link]
 You can update the visitors counter by hitting api with published API with the postman and update the JSON object and you will see immediately the update on front end part.
 
+
+## Example JSON Request
 ```
 [
     {
@@ -83,6 +85,7 @@ You can update the visitors counter by hitting api with published API with the p
   
 # Steps
 - install laravel project on docker
+- `docker-compose up -d`
 - run container docker
 
 - install laravel vendor 
