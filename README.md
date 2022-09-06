@@ -6,17 +6,70 @@
 
 ## About The task
 
-- back-end (PHP Laravel, MySQL, Docker)
-- frontend (react js, redux, Redux Toolkit)
-- WebSocket for real-time update (pusher)
+- Back-end (PHP Laravel, MySQL, Docker).
+- Frontend (react js, redux, Redux Toolkit).
+- WebSocket for real-time update (pusher).
 
 ## Demo
-- You can check a live demo from here [fronend link]
+- You can check the live demo from here [fronend link]
 - [postman link]
-You can update the visitors counter by hitting api with published API with the postman and update the JSON object and you will see immediately the update on front end part
+You can update the visitors counter by hitting api with published API with the postman and update the JSON object and you will see immediately the update on front end part.
+
+`
+[
+    {
+      "title":"Collerys",  
+      "AnmeldungenHeute":"12",
+      "WebsiteBesucherHeute":"230",
+      "users":[
+         {
+            "name":"Emma",
+            "surname":"Thomas"
+         }
+      ]
+   },
+      {
+      "title":"Duftz",  
+      "AnmeldungenHeute":"122",
+      "WebsiteBesucherHeute":"201",
+      "users":[
+         {
+            "name":"Sophia",
+            "surname":"Joseph"
+         }
+      ]
+   },
+      {
+      "title":"Belegbote", 
+      "AnmeldungenHeute":"302",
+      "WebsiteBesucherHeute":"4001",
+      "users":[
+         {
+            "name":"Isabella",
+            "surname":"Joseph"
+         },
+         {
+            "name":"Mia",
+            "surname":"Ezekiel"
+         }
+      ]
+   },
+      {
+      "title":"Greetix", 
+      "AnmeldungenHeute":"987",
+      "WebsiteBesucherHeute":"774",
+      "users":[
+         {
+            "name":"Nora",
+            "surname":"Ezekiel"
+         }
+      ]
+   }
+   ]
+`
 
  <img src='https://i.postimg.cc/3xjbPxK3/webconia.png' border='0' alt='webconia'/> 
-### Equipments
+### Tools
 
 - **[Laravel](https://laravel.com/)**
 - **[Docker](https://www.docker.com/)**
