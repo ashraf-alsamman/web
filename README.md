@@ -15,6 +15,8 @@
 - [postman link]
 You can update the visitors counter by hitting api with published API with the postman and update the JSON object and you will see immediately the update on front end part.
 
+ <img src='https://i.postimg.cc/3xjbPxK3/webconia.png' border='0' alt='webconia'/> 
+
 
 ## Example JSON Request
 ```
@@ -70,7 +72,6 @@ You can update the visitors counter by hitting api with published API with the p
    ]
 ```
 
- <img src='https://i.postimg.cc/3xjbPxK3/webconia.png' border='0' alt='webconia'/> 
 ### Tools
 
 - **[Laravel](https://laravel.com/)**
