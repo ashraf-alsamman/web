@@ -84,23 +84,23 @@ You can update the visitors counter by hitting api with published API with the p
 
   
 # Steps
-- install laravel project on docker
-- `docker-compose up -d`
-- run container docker
+- Install Laravel project on docker:
+    - `docker-compose up -d`
 
 - install laravel vendor 
- ./vendor/bin/sail composer install
+`./vendor/bin/sail composer install`
  
  
 - run migration 
-- ./vendor/bin/sail php artisan migrate
+ `./vendor/bin/sail php artisan migrate`
 
 - run backend project
-- ./vendor/bin/sail up
-
+  `./vendor/bin/sail up`
+  
+### Frontend
 - run frontend (react js) project
-- yarn install
-- yarn start
+  `yarn install`
+  `yarn start`
 
 Try localhost/webhook/create
 and change data in json object and check frontend part
