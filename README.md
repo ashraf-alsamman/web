@@ -12,7 +12,7 @@
 
 ## Demo
 - You can check the live demo from here [fronend link]
-- [postman link]
+- Postman collection <a href="https://www.getpostman.com/collections/2cbc87c7db5b9b36e7d0">https://www.getpostman.com/collections/2cbc87c7db5b9b36e7d0</a> 
 You can update the visitors counter by hitting api with published API with the postman and update the JSON object and you will see immediately the update on front end part.
 
  <img src='https://i.postimg.cc/3xjbPxK3/webconia.png' border='0' alt='webconia'/> 
@@ -90,7 +90,7 @@ You can update the visitors counter by hitting api with published API with the p
   
 # Steps
 - Install Laravel project on docker:
-    - `docker run --rm     -u "$(id -u):$(id -g)"     -v $(pwd):/var/www/html     -w /var/www/html     laravelsail/php81-composer:latest     composer update laravel/sail`
+  `docker run --rm     -u "$(id -u):$(id -g)"     -v $(pwd):/var/www/html     -w /var/www/html     laravelsail/php81-composer:latest     composer update laravel/sail`
 
 - install laravel vendor 
 `./vendor/bin/sail composer install`
