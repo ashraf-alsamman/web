@@ -7,8 +7,8 @@
 ## About The task
 
 - Back-end (PHP Laravel, MySQL, Docker).
-- Frontend (react js, redux, Redux Toolkit).
-- WebSocket for real-time update (pusher).
+- Frontend (React js, Redux, Redux Toolkit).
+- WebSocket for real-time update (Pusher).
 
 ## Demo
 - You can check the live demo from here [fronend link]
@@ -98,9 +98,11 @@ You can update the visitors counter by hitting api with published API with the p
   `./vendor/bin/sail up`
   
 ### Frontend
-- run frontend (react js) project
+- Edit config/confige.js api  
+- Run frontend (react js) project
   `yarn install`
   `yarn start`
+  
 
 Try localhost/webhook/create
 and change data in json object and check frontend part
