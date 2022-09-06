@@ -72,6 +72,10 @@ You can update the visitors counter by hitting api with published API with the p
    ]
 ```
 
+## Example Header Request
+- signature_header_name `Signature`
+- signing_secret `ashraf`
+
 ### Tools
 
 - **[Laravel](https://laravel.com/)**
