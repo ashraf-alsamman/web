@@ -12,7 +12,7 @@
 
 ## Demo
 - You can check the live demo from here [fronend link]
-- Postman collection <a href="https://www.postman.com/ashraf-alsamman/workspace/a5d22c07-2317-430e-b7a6-51e2bafc3251/request/733051-02383877-4929-463b-b268-444ce168b707">https://www.getpostman.com/collections/2cbc87c7db5b9b36e7d0</a> 
+- Postman collection <a href="https://www.postman.com/ashraf-alsamman/workspace/a5d22c07-2317-430e-b7a6-51e2bafc3251/request/733051-02383877-4929-463b-b268-444ce168b707">Postman Collection</a> 
 You can update the visitors counter by hitting api with published API with the postman and update the JSON object and you will see immediately the update on front end part.
 
  <img src='https://i.postimg.cc/3xjbPxK3/webconia.png' border='0' alt='webconia'/> 
