@@ -26,6 +26,6 @@ class WebookController extends Controller
             return response(json_decode($webhook, true)['payload']);
         }
 
-        return response()->json(['error' => 'Error happen in the server'], 500);
+        return response()->json(['error' => 'No data exist'], 500);
     }
 }
