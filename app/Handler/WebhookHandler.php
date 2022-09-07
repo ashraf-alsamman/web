@@ -3,7 +3,7 @@
 namespace App\Handler;
 
 use Spatie\WebhookClient\Jobs\ProcessWebhookJob;
-use   App\Events\PusherEvent;
+use App\Events\PusherEvent;
 
 class WebhookHandler extends ProcessWebhookJob
 {

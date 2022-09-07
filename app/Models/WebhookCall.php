@@ -1,12 +1,15 @@
 <?php
 
 namespace App\Models;
+
 use Exception;
 use Illuminate\Database\Eloquent\Model;
 use Illuminate\Http\Request;
 use Spatie\WebhookClient\WebhookConfig;
 use Symfony\Component\HttpFoundation\HeaderBag;
-use Spatie\WebhookClient\Models\WebhookCall as SpatieWebhookCall ;
+use Spatie\WebhookClient\Models\WebhookCall as SpatieWebhookCall;
+use App\Validators\WebhookValidator;
+
 /**
  * Class WebhookCall
  * @package Spatie\WebhookClient\Models
@@ -39,29 +42,19 @@ class WebhookCall extends SpatieWebhookCall
         'exception' => 'array',
     ];
 
-    // public static function storeWebhook(WebhookConfig $config, Request $request): SpatieWebhookCall
-        public static function storeWebhook(WebhookConfig $config, Request $request): SpatieWebhookCall
-
+    public static function storeWebhook(WebhookConfig $config, Request $request): SpatieWebhookCall
     {
-
-        $request->validate([
-            '*.title' => 'required|string',
-            '*.AnmeldungenHeute' => 'required|integer',
-            '*.WebsiteBesucherHeute'    => 'required|integer',
-            '*.users'    => 'present|array',
-            '*.users.*.name' => 'required|string',
-            '*.users.*.surname' => 'required|string',
-        ]);
-
+        
+        WebhookValidator::validate($request->all());
 
         $headers = SpatieWebhookCall::headersToStore($config, $request);
+
         return SpatieWebhookCall::create([
             'name' => $config->name,
             'url' => $request->fullUrl(),
             'headers' => $headers,
             'payload' => $request->input(),
         ]);
-        
     }
 
     public static function headersToStore(WebhookConfig $config, Request $request): array
@@ -82,6 +75,11 @@ class WebhookCall extends SpatieWebhookCall
             ->toArray();
     }
 
+    /**
+     * Get header bag
+     *
+     * @return HeaderBag
+     */
     public function headerBag(): HeaderBag
     {
         return new HeaderBag($this->headers ?? []);
@@ -91,5 +89,13 @@ class WebhookCall extends SpatieWebhookCall
     {
         return $this->headerBag();
     }
- 
+
+    /**
+     *
+     * @return WebhookCall
+     */
+    public static function getLatestWebhookCall(): WebhookCall
+    {
+      return self::orderBy('id', 'desc')->first();
+    }
 }

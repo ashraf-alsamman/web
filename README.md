@@ -1,64 +1,121 @@
-<p align="center"><a href="https://laravel.com" target="_blank"><img src="https://raw.githubusercontent.com/laravel/art/master/logo-lockup/5%20SVG/2%20CMYK/1%20Full%20Color/laravel-logolockup-cmyk-red.svg" width="400"></a></p>
+<p align="center"><a href="https://laravel.com" target="_blank"><img src="https://www.webconia.de/wp-content/uploads/2020/03/webconia_logo.svg" width="400"></a></p>
 
-<p align="center">
-<a href="https://travis-ci.org/laravel/framework"><img src="https://travis-ci.org/laravel/framework.svg" alt="Build Status"></a>
-<a href="https://packagist.org/packages/laravel/framework"><img src="https://img.shields.io/packagist/dt/laravel/framework" alt="Total Downloads"></a>
-<a href="https://packagist.org/packages/laravel/framework"><img src="https://img.shields.io/packagist/v/laravel/framework" alt="Latest Stable Version"></a>
-<a href="https://packagist.org/packages/laravel/framework"><img src="https://img.shields.io/packagist/l/laravel/framework" alt="License"></a>
-</p>
 
-## About Laravel
 
-Laravel is a web application framework with expressive, elegant syntax. We believe development must be an enjoyable and creative experience to be truly fulfilling. Laravel takes the pain out of development by easing common tasks used in many web projects, such as:
+ 
 
-- [Simple, fast routing engine](https://laravel.com/docs/routing).
-- [Powerful dependency injection container](https://laravel.com/docs/container).
-- Multiple back-ends for [session](https://laravel.com/docs/session) and [cache](https://laravel.com/docs/cache) storage.
-- Expressive, intuitive [database ORM](https://laravel.com/docs/eloquent).
-- Database agnostic [schema migrations](https://laravel.com/docs/migrations).
-- [Robust background job processing](https://laravel.com/docs/queues).
-- [Real-time event broadcasting](https://laravel.com/docs/broadcasting).
+## About The task (Coding Challenge)
 
-Laravel is accessible, powerful, and provides tools required for large, robust applications.
+- Back-end (PHP Laravel, MySQL, Docker).
+- Frontend (React js, Redux, Redux Toolkit).
+- WebSocket for real-time update (Pusher).
 
-## Learning Laravel
+## Demo
+- You can check the live demo from here [fronend link]
+- Postman collection <a href="https://www.postman.com/ashraf-alsamman/workspace/a5d22c07-2317-430e-b7a6-51e2bafc3251/request/733051-02383877-4929-463b-b268-444ce168b707">Postman Collection</a> 
+You can update the visitors counter by hitting api with published API with the postman and update the JSON object and you will see immediately the update on front end part.
 
-Laravel has the most extensive and thorough [documentation](https://laravel.com/docs) and video tutorial library of all modern web application frameworks, making it a breeze to get started with the framework.
+ <img src='https://i.postimg.cc/3xjbPxK3/webconia.png' border='0' alt='webconia'/> 
 
-If you don't feel like reading, [Laracasts](https://laracasts.com) can help. Laracasts contains over 2000 video tutorials on a range of topics including Laravel, modern PHP, unit testing, and JavaScript. Boost your skills by digging into our comprehensive video library.
 
-## Laravel Sponsors
+## Example JSON Request
+```
+[
+    {
+      "title":"Collerys",  
+      "AnmeldungenHeute":"12",
+      "WebsiteBesucherHeute":"230",
+      "users":[
+         {
+            "name":"Emma",
+            "surname":"Thomas"
+         }
+      ]
+   },
+      {
+      "title":"Duftz",  
+      "AnmeldungenHeute":"122",
+      "WebsiteBesucherHeute":"201",
+      "users":[
+         {
+            "name":"Sophia",
+            "surname":"Joseph"
+         }
+      ]
+   },
+      {
+      "title":"Belegbote", 
+      "AnmeldungenHeute":"302",
+      "WebsiteBesucherHeute":"4001",
+      "users":[
+         {
+            "name":"Isabella",
+            "surname":"Joseph"
+         },
+         {
+            "name":"Mia",
+            "surname":"Ezekiel"
+         }
+      ]
+   },
+      {
+      "title":"Greetix", 
+      "AnmeldungenHeute":"987",
+      "WebsiteBesucherHeute":"774",
+      "users":[
+         {
+            "name":"Nora",
+            "surname":"Ezekiel"
+         }
+      ]
+   }
+   ]
+```
 
-We would like to extend our thanks to the following sponsors for funding Laravel development. If you are interested in becoming a sponsor, please visit the Laravel [Patreon page](https://patreon.com/taylorotwell).
+## Example Header Request
+- signature_header_name `Signature`
+- signing_secret `ashraf`
 
-### Premium Partners
+### Tools
 
-- **[Vehikl](https://vehikl.com/)**
-- **[Tighten Co.](https://tighten.co)**
-- **[Kirschbaum Development Group](https://kirschbaumdevelopment.com)**
-- **[64 Robots](https://64robots.com)**
-- **[Cubet Techno Labs](https://cubettech.com)**
-- **[Cyber-Duck](https://cyber-duck.co.uk)**
-- **[Many](https://www.many.co.uk)**
-- **[Webdock, Fast VPS Hosting](https://www.webdock.io/en)**
-- **[DevSquad](https://devsquad.com)**
-- **[Curotec](https://www.curotec.com/services/technologies/laravel/)**
-- **[OP.GG](https://op.gg)**
-- **[WebReinvent](https://webreinvent.com/?utm_source=laravel&utm_medium=github&utm_campaign=patreon-sponsors)**
-- **[Lendio](https://lendio.com)**
+- **[Laravel](https://laravel.com/)**
+- **[Docker](https://www.docker.com/)**
+- **[Nodejs](https://nodejs.org/en/)**
+- **[Pusher](https://pusher.com/)**
 
-## Contributing
+- **[ReactJs](https://reactjs.org/)**
+- **[Redux](https://redux.js.org/)**
+- **[Redux-toolkit](https://redux-toolkit.js.org/)**
 
-Thank you for considering contributing to the Laravel framework! The contribution guide can be found in the [Laravel documentation](https://laravel.com/docs/contributions).
+  
+# Steps
+- Open wsl2 command line and clone the project
+- Rename .env.example to .env
+- Install Laravel project on docker:
+  `docker run --rm     -u "$(id -u):$(id -g)"     -v $(pwd):/var/www/html     -w /var/www/html     laravelsail/php81-composer:latest     composer update laravel/sail`
 
-## Code of Conduct
+- Run the following before the next step (requere) and keep it running 
+ `./vendor/bin/sail up`
+ 
+- Open another wsl2 command line run migration 
+ `./vendor/bin/sail php artisan migrate`
+ 
+ - open postman and hit the link [localhost/webhook/create]
+   and you can update the data (body of the request like a demo) and check the frontend part
+  
+### Frontend
+- Edit config/confige.js api  
+- Run frontend (react js) project
+  `yarn install`
+  `yarn start`
+  
 
-In order to ensure that the Laravel community is welcoming to all, please review and abide by the [Code of Conduct](https://laravel.com/docs/contributions#code-of-conduct).
+Try localhost/webhook/create
+and change data in json object and check frontend part
 
-## Security Vulnerabilities
 
-If you discover a security vulnerability within Laravel, please send an e-mail to Taylor Otwell via [taylor@laravel.com](mailto:taylor@laravel.com). All security vulnerabilities will be promptly addressed.
+ 
 
-## License
+ 
 
-The Laravel framework is open-sourced software licensed under the [MIT license](https://opensource.org/licenses/MIT).
+ 

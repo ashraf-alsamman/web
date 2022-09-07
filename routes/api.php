@@ -14,9 +14,7 @@ use App\Http\Controllers\WebookController;
 |
 */
 
-Route::get('home', [WebookController::class, 'getLastWebhookRecorde']);
+Route::get('visitors', [WebookController::class, 'getVisitors']);
 
 
-Route::middleware('auth:sanctum')->get('/user', function (Request $request) {
-    return $request->user();
-});
+

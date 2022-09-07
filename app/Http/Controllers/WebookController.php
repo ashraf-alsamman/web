@@ -2,19 +2,30 @@
 
 namespace App\Http\Controllers;
 
-use App\Models\Webhook;
-use Illuminate\Http\Request;
+use App\Models\WebhookCall;
 
+/**
+ * WebhookController
+ * 
+ * Main controller for the webhook calls.
+ * 
+ * @author Ashraf Alsamman <ashraf.alsamman@gmail.com>
+ */
 class WebookController extends Controller
 {
-    function getLastWebhookRecorde()
+    /**
+     * Get the latest visitors inserted by the webhook.
+     *
+     * @return void
+     */
+    function getVisitors()
     {
-        $webhook = Webhook::orderBy('id', 'desc')->first();
-        $webhook = stripslashes($webhook->payload);
+        $webhook = WebhookCall::getLatestWebhookCall();
+
         if ($webhook) {
-            return response(json_decode($webhook, true));
-        } else {
-            return response()->json(['error' => 'Error happen in the server'], 500);
+            return response(json_decode($webhook, true)['payload']);
         }
+
+        return response()->json(['error' => 'Error happen in the server'], 500);
     }
 }
