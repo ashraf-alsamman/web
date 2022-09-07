@@ -98,6 +98,9 @@ You can update the visitors counter by hitting api with published API with the p
  
 - Open another wsl2 command line run migration 
  `./vendor/bin/sail php artisan migrate`
+ 
+ - open postman and hit the link [localhost/webhook/create]
+   and you can update the data (body of the request like a demo) and check the frontend part
   
 ### Frontend
 - Edit config/confige.js api  
