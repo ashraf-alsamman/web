@@ -89,17 +89,17 @@ You can update the visitors counter by hitting api with published API with the p
 
   
 # Steps
+- Open wsl2 command line and clone the project
 - Install Laravel project on docker:
   `docker run --rm     -u "$(id -u):$(id -g)"     -v $(pwd):/var/www/html     -w /var/www/html     laravelsail/php81-composer:latest     composer update laravel/sail`
 
-- install laravel vendor 
-`./vendor/bin/sail composer install`
+- Run it is necessary for the next step (migrate)
+`./vendor/bin/sail up`
  
- 
-- run migration 
+- Open another wsl2 command line run migration 
  `./vendor/bin/sail php artisan migrate`
 
-- run backend project
+- Run backend project
   `./vendor/bin/sail up`
   
 ### Frontend
