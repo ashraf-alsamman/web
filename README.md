@@ -90,6 +90,7 @@ You can update the visitors counter by hitting api with published API with the p
   
 # Steps
 - Open wsl2 command line and clone the project
+- Rename .env.example to .env
 - Install Laravel project on docker:
   `docker run --rm     -u "$(id -u):$(id -g)"     -v $(pwd):/var/www/html     -w /var/www/html     laravelsail/php81-composer:latest     composer update laravel/sail`
 
